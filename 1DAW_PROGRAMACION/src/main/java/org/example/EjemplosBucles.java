@@ -6,7 +6,9 @@ public class EjemplosBucles {
     static void main(String[] args) {
 
         // menu();
-        ej5();
+        // ej5();
+         ej6();
+//        ej6Diferente();
     }
 
     public static void menu() {
@@ -74,14 +76,69 @@ public class EjemplosBucles {
         System.out.println("HAS SELECCIONADO SALIR DE LA APLICACIÓN");
     }
 
-    public static void ej5 (){
+    public static void ej5() {
         Scanner sc = new Scanner(System.in);
         int num;
         int total = 0;
-        while (total < 100){
+        while (total < 100) {
             System.out.print("Teclea un número entero: ");
             num = sc.nextInt();
-            total = total+num;
+            total = total + num;
         }
     }
+
+    private static void ej6() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Teclea una frase:");
+        String frase = sc.nextLine();
+        System.out.println("Teclea una letra o un carácter simple:");
+        char letra;
+        letra = sc.next().charAt(0);
+        int contador = 0;
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == letra) {
+                contador++;
+            }
+
+        }
+        if (contador == 0) {
+            System.out.println("La letra " + letra + " no se encuentra en el texto.");
+        } else if (contador == 1) {
+            System.out.println("La letra " + letra + " sólo se encuentra una vez.");
+        }else {
+            System.out.println("La letra " + letra + " se encuentra " + contador + " veces en el texto.");
+        }
+
+        System.out.println("\n\nProceso mediante otro método que devuelve: ");
+        System.out.println("La letra " + letra + " se repite " + vecesLetraEnFrase(frase, letra) + " veces em la frase.");
+
+
+    }
+    public static void ej6Diferente (){
+        Scanner sc = new Scanner(System.in);
+
+        String frasefinal = "";
+        System.out.println("Teclea una frase:");
+        String frase = sc.nextLine();
+        System.out.println("Teclea una letra o un carácter simple:");
+        String letra = sc.nextLine();
+        int contador = 0;
+
+        if (frase.contains(letra)){
+            frasefinal = frase.replace(letra, "");
+            contador = frase.length() - frasefinal.length();
+        }
+        System.out.println(contador + " veces.");
+    }
+
+    private static int vecesLetraEnFrase (String frase, char letra) {
+        int contador = 0;
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == letra) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+
 }

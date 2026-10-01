@@ -13,6 +13,9 @@ public class EjemplosJava2026 {
         for (int i = 0; i < nombre.length(); i++) {
 
 
+
+
+
         }
 
 

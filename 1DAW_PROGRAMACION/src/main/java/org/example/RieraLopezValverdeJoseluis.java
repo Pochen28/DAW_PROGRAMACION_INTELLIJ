@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RieraLopezValverdeJoseluis {
     static void main() {
-        ej1();
+//        ej1();
         ej2();
     }
 
@@ -35,9 +35,10 @@ public class RieraLopezValverdeJoseluis {
         String fraseReves = "" ;
         char letra;
         for (int i = 0; i < frase.length(); i++) {
-            letra = frase.charAt(frase.length() - 1 -i);
+            letra = frase.charAt(frase.length() - 1 -i );
             fraseReves += letra;
         }
+
         System.out.println(fraseReves);
     }
 }

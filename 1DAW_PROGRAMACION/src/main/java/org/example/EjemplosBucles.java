@@ -3,12 +3,13 @@ package org.example;
 import java.util.Scanner;
 
 public class EjemplosBucles {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
-        // menu();
-        // ej5();
-         ej6();
-//        ej6Diferente();
+        menu();
+         // ej5();
+         // ej6();
+        // ej6Diferente();
+
     }
 
     public static void menu() {
@@ -53,10 +54,12 @@ public class EjemplosBucles {
     }
 
     public static void anyadirContacto() {
+
         System.out.println("HAS SELECCIONADO AÑADIR CONTACTO");
     }
 
     public static void borrarContacto() {
+
         System.out.println("HAS SELECCIONADO BORRAR CONTACTO");
     }
 

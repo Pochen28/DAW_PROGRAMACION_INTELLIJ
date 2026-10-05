@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class RieraLopezValverdeJoseluis {
     static void main() {
-//        ej1();
-        ej2();
+         ej1();
+//        ej2();
     }
 
     public static void ej1 () {
@@ -17,14 +17,15 @@ public class RieraLopezValverdeJoseluis {
         String frase = sc.nextLine();
         frase = frase + ".";
         do {
-            contador++;
+
             letra = frase.charAt(contador);
+            contador++;
             if (letra != ' '){
                 cantidadLetras++;
             }
 
         }while (letra != '.');
-        System.out.println(cantidadLetras);
+        System.out.println(cantidadLetras - 1);
 
     }
 

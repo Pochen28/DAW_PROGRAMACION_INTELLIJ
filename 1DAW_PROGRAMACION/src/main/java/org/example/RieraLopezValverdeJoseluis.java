@@ -27,6 +27,7 @@ public class RieraLopezValverdeJoseluis {
         }while (letra != '.');
         System.out.println(cantidadLetras - 1);
 
+
     }
 
     public static void ej2 () {

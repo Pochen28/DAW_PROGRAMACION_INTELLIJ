@@ -6,69 +6,54 @@ public class Contacto {
     private String nombre;
     private String telefono;
     private String email;
-    private LocalDate fechayhora;
+    private LocalDate fechaNac;
     private String redSocial;
 
-
-
-    public Contacto(String nombre, String telefono,  String email, LocalDate fechayhora, String redSocial) {
-        this.telefono = telefono;
+    public Contacto(String nombre, String telefono, String email, LocalDate fechaNac, String redSocial) {
         this.nombre = nombre;
+        this.telefono = telefono;
         this.email = email;
-        this.fechayhora = fechayhora;
+        this.fechaNac = fechaNac;
         this.redSocial = redSocial;
-        Contacto C1 = new Contacto("Manuel", "623678627", "manuelillo@gmail.com", getFechayhora(), "manueloriginal");
     }
-
 
     public String getNombre() {
         return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getTelefono() {
         return telefono;
     }
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
 
     public String getEmail() {
         return email;
     }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-    public LocalDate getFechayhora() {
-        return fechayhora;
+    public LocalDate getFechaNac() {
+        return fechaNac;
+    }
+    public void setFechaNac(LocalDate fechaNac) {
+        this.fechaNac = fechaNac;
     }
 
     public String getRedSocial() {
         return redSocial;
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setFechayhora(LocalDate fechayhora) {
-        this.fechayhora = fechayhora;
-    }
-
     public void setRedSocial(String redSocial) {
         this.redSocial = redSocial;
     }
 
     @Override
     public String toString() {
-        return "Contacto{" +
-                "nombre='" + nombre + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", email='" + email + '\'' +
-                ", fechayhora=" + fechayhora +
-                ", redSocial='" + redSocial + '\'' +
-                '}';
+        return nombre + "-" + telefono + "-" + email + "-" + fechaNac + "-" + redSocial;
     }
 }

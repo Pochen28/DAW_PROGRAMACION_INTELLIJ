@@ -1,9 +1,9 @@
-package org.example.RieraLopez;
+package org.example.examenes;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Joseluis {
+public class PruebaObjetivaArrays_23I10I2026 {
     static void main(String Args[]) {
         ejercicio1();
         ejercicio2();
@@ -16,11 +16,11 @@ public class Joseluis {
     private static String[] modulos = {"Programacion", "Entornos", "Marcas", "Bases de datos", "FOL"};
 
     private static int[][] notas = {
-            {7, 7, 5, 5, 8, 4, 4, 4, 4, 4, 4, 4},
-            {6, 8, 5, 9, 4, 8, 4, 7, 4, 4, 4, 4},
-            {5, 4, 9, 5, 4, 5, 4, 6, 6, 7, 4, 7},
-            {4, 4, 9, 8, 4, 9, 4, 9, 7, 8, 9, 6},
-            {9, 7, 6, 9, 8, 8, 4, 5, 5, 8, 7, 5}
+            {1, 10, 5, 5, 8, 4, 4, 4, 4, 4, 4, 1},
+            {10, 9, 5, 9, 4, 8, 4, 7, 4, 1, 4, 1},
+            {1, 9, 8, 10, 4, 5, 4, 6, 6, 7, 4, 1},
+            {4, 9, 10, 8, 4, 9, 4, 1, 7, 1, 9, 1},
+            {1, 7, 6, 9, 10, 8, 4, 5, 5, 8, 7, 5}
 
     };
     private static int [] notasProgramacion = {6,7,5,4,5,5,9,8,4,4,8,9};
@@ -48,12 +48,12 @@ public class Joseluis {
 
 
             if(notasProgramacion [i] > notaAlta){
-                notaAlta = notas[0][i];
+                notaAlta = notas[0][i]; //Aqui son notas programacion
                 alumnoAlta = alumnado[i];
             }
 
             if(notasProgramacion [i] < notaBaja){
-                notaBaja = notas[0][i];
+                notaBaja = notas[0][i]; //Aqui son notas programacion
                 alumnoBaja = alumnado[i];
             }
 

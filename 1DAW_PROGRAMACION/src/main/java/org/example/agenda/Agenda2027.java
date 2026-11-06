@@ -11,7 +11,9 @@ public class Agenda2027 {
 
     public static void main(String[] args) {
         cargaDatos();
-        menu();
+//        menu();
+        compararContactos();
+
     }
 
     public static void cargaDatos() {
@@ -128,5 +130,17 @@ public class Agenda2027 {
 
         agenda.stream().filter(c->c.getRedSocial().equalsIgnoreCase("facebook"))
                 .sorted(Comparator.comparing(c->c.getNombre())).forEach(c->System.out.println(c));
+    }
+
+    private static void compararContactos() {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("\n\n\nDiferencia de edad entre dos contactos");
+        System.out.println("Dime el primer contacto que quieres comparar:");
+        String nombre1=sc.nextLine();
+
+
+
+
+
     }
 }

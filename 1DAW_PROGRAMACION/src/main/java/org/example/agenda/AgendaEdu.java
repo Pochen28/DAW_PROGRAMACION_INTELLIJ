@@ -122,7 +122,7 @@ public class AgendaEdu {
         return pos;
     }
 
-    private static void listarContactos() {
+    private void listarContactos() {
 
         //recorrido agenda con for tradicional
         for(int i=0;i<agenda.size();i++){
@@ -260,6 +260,6 @@ public class AgendaEdu {
 
     private static void comparacionEdad () {
         Scanner sc =  new Scanner(System.in);
-        
+
     }
 }
